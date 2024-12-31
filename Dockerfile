@@ -1,4 +1,4 @@
-FROM n0madic/alpine-gcc:9.2.0
+FROM arm64v8/alpine:latest
 RUN apk add --quiet --no-cache libressl-dev 
 COPY ./*.h /opt/src/
 COPY ./*.c /opt/src/
