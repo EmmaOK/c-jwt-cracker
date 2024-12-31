@@ -1,5 +1,5 @@
 FROM arm64v8/alpine:latest
-RUN apk add --quiet --no-cache libressl-dev 
+RUN apk add --quiet --no-cache libressl-dev make gcc musl-dev
 COPY ./*.h /opt/src/
 COPY ./*.c /opt/src/
 COPY Makefile /opt/src/
